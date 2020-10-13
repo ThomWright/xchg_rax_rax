@@ -4,7 +4,7 @@
 ;   negative = -1
 
 neg      rax
-sbb      rax, rax
+sbb      rax,rax
 neg      rax
 
 ; CF : Carry Flag.

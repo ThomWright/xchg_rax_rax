@@ -1,7 +1,7 @@
 ; Produces the Fibonacci sequence in rdx
 
 .loop:
-    xadd     rax, rdx
+    xadd     rax,rdx
     loop     .loop
 
 ; xadd - exchange and add
