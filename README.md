@@ -4,7 +4,9 @@
 
 It contains "a collection of assembly gems and riddles", "built to teach you one concept about assembly, math or life in general".
 
-## Puzzles
+## Solutions
+
+Spoilers here!
 
 - [0x00](./0x00.asm)
 - [0x01](./0x01.asm)
