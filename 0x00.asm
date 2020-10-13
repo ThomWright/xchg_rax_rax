@@ -1,3 +1,5 @@
+; Zero all the things! Or at least some of the things.
+
 xor     eax, eax    ; zero the eax register
 lea     rbx, [0]    ; set rbx to memory address zero
 loop    $           ; resets counter register rcx by looping to the current instruction until it's zero?

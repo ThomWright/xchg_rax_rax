@@ -7,6 +7,8 @@ It contains "a collection of assembly gems and riddles", "built to teach you one
 ## Puzzles
 
 - [0x00](./0x00.asm)
+- [0x01](./0x01.asm)
+- [0x02](./0x02.asm)
 
 ## Resources
 
@@ -14,3 +16,4 @@ It contains "a collection of assembly gems and riddles", "built to teach you one
 - [Wikibook: x86 Assembly](https://en.wikibooks.org/wiki/X86_Assembly)
   - [x86 architecture](https://en.wikibooks.org/wiki/X86_Assembly/X86_Architecture)
 - [Wikibook: x86 Disassembly](https://en.wikibooks.org/wiki/X86_Disassembly)
+- [Instruction reference](https://www.felixcloutier.com/x86/index.html)
