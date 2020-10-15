@@ -1,4 +1,4 @@
-; Produces the Fibonacci sequence in rdx
+; Produces the Fibonacci sequence in rdx (until rcx reaches zero)
 
 .loop:
     xadd     rax,rdx

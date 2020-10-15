@@ -1,5 +1,5 @@
-; Saturating unsigned subtraction
-; If the original subtraction underflows (goes negative), the result in rax will be 0, otherwise the original result
+; A min function
+; rdx = min(rdx, rax)
 
 sub      rdx,rax
 sbb      rcx,rcx
@@ -18,12 +18,12 @@ add      rax,rcx
 ; Example:
 
 ; Starting register values:
-; rax = 1             2         1
-; rdx = 0             0         5
-; rcx = 0             0         0
+; rax =  1     2     1
+; rdx =  0     0     5
+; rcx =  0     0     0
 ;
 ; After each instruction:
-; rdx = 0xffff        0xfffe    4
-; rcx = -1 (0xffff)   0xffff    0
-; rcx = 0xffff        0xfffe    0
-; rax = 0             0         4 <- result is: max(rdx - rax, 0)
+; rdx = -1    -2     4
+; rcx = -1    -1    -1
+; rcx = -1    -2     4
+; rax =  0     0     5 <- result is: min(rdx, rax)

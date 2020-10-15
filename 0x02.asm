@@ -1,7 +1,5 @@
-; Replaces rax with sign of contents:
-;   positive = 1
-;   zero = 0
-;   negative = -1
+; Boolean cast
+; rax = rax == 0 ? 0 : 1
 
 neg      rax
 sbb      rax,rax
@@ -25,13 +23,13 @@ neg      rax
 
 ; rax = 5
 ; neg -> -5 (CF = 1)
-; sbb -> -1
+; sbb -> -1 (-5 - (-5 + 1))
 ; neg -> 1 (CF = 1)
 
 ; rax = -5
 ; neg -> 5 (CF = 1)
-; sbb -> 1
-; neg -> -1 (CF = 1)
+; sbb -> -1 (5 - (5 + 1)))
+; neg -> 1 (CF = 1)
 
 ; rax = 0
 ; neg -> 0 (CF = 0)

@@ -1,11 +1,11 @@
-; Flips a bit.
-; I feel like I'm failing to understand the significance of this one.
+; Flips the 5th bit.
+; Apparently in ASCII this converts from upper to lower case and vice versa!
 
 xor      al,0x20
 
 ; al - 8-bit accumlator register
 ; 0x20 = 32 = 0b0010_0000
-;                 ^ this bit is always flipped
+;                 ^ this bit gets flipped
 
 ; al =  0 -> 32
 ;       1 -> 33
